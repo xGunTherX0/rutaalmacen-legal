@@ -3,33 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <title>Política de Privacidad - RutaAlmacén</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
-        h1, h2 { color: #1b5e20; }
-        .container { background: #f9f9f9; padding: 25px; border-radius: 8px; border: 1px solid #ddd; }
-        footer { margin-top: 30px; font-size: 0.8em; color: #666; border-top: 1px solid #eee; padding-top: 10px; }
+        :root { --verde: #1b5e20; --verde-claro: #e8f5e9; }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; max-width: 860px; margin: 0 auto; padding: 24px 20px; color: #333; background: #fff; }
+        h1 { color: var(--verde); margin-bottom: 4px; }
+        h2 { color: var(--verde); border-bottom: 2px solid var(--verde-claro); padding-bottom: 6px; margin-top: 34px; }
+        h3 { color: #2e7d32; margin-bottom: 6px; }
+        .container { background: #fff; }
+        .meta { background: var(--verde-claro); border-left: 4px solid var(--verde); padding: 12px 16px; border-radius: 6px; font-size: 0.95em; }
+        table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.95em; }
+        th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; vertical-align: top; }
+        th { background: var(--verde-claro); color: var(--verde); }
+        ul { padding-left: 22px; }
+        li { margin-bottom: 6px; }
+        a { color: var(--verde); }
+        .contacto { background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 16px 20px; }
+        footer { margin-top: 40px; font-size: 0.85em; color: #666; border-top: 1px solid #eee; padding-top: 14px; }
+        @media (max-width: 600px) { table, thead, tbody, th, td, tr { display: block; } thead { display: none; } td { border: none; border-bottom: 1px solid #eee; padding: 8px 10px; } tr { margin-bottom: 10px; } }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Política de Privacidad - RutaAlmacén</h1>
-        <p><strong>Última actualización:</strong> Julio 2026</p>
-        <p>RutaAlmacén respeta su privacidad y está comprometida con la protección de sus datos personales conforme a la legislación de la República de Chile (Ley N° 21.727 y Ley N° 19.628).</p>
-        
-        <h2>1. Información que recopilamos</h2>
+        <h1>Política de Privacidad</h1>
+        <p><strong>Aplicación:</strong> RutaAlmacén (Android)</p>
+        <div class="meta">
+            <p><strong>Última actualización:</strong> 15 de octubre de 2026</p>
+            <p><strong>Responsable del tratamiento:</strong> RutaAlmacén — <a href="mailto:soporte.cfmcweb@gmail.com">soporte.cfmcweb@gmail.com</a> — Chile</p>
+        </div>
+
+        <p>Esta Política de Privacidad describe cómo RutaAlmacén (&ldquo;la Aplicación&rdquo;) recopila, usa, almacena y protege su información cuando usted la descarga, instala o utiliza. RutaAlmacén es una plataforma que conecta a comerciantes de barrio (vendedores) con compradores cercanos, permitiendo gestionar inventario, localizar almacenes, recibir alertas y publicar ofertas.</p>
+        <p>Al usar la Aplicación usted acepta las prácticas descritas aquí. Si no está de acuerdo, no utilice la Aplicación.</p>
+
+        <h2>1. Datos que recopilamos</h2>
+
+        <h3>1.1 Datos que usted proporciona</h3>
+        <table>
+            <thead><tr><th>Dato</th><th>Cuándo</th><th>Finalidad</th></tr></thead>
+            <tbody>
+                <tr><td>Nombre, correo electrónico y foto de perfil</td><td>Al iniciar sesión con Google</td><td>Crear y autenticar su cuenta</td></tr>
+                <tr><td>Rol (comprador o vendedor)</td><td>Al registrarse</td><td>Definir las funciones disponibles</td></tr>
+                <tr><td>Nombre y datos de su almacén (nombre, dirección, horario, métodos de pago)</td><td>Como vendedor</td><td>Mostrar su almacén a los compradores</td></tr>
+                <tr><td>Productos, categorías y precios de su inventario</td><td>Como vendedor</td><td>Gestionar y publicar su catálogo</td></tr>
+                <tr><td>Notas personales de negocio</td><td>Como vendedor</td><td>Funcionalidad privada de gestión</td></tr>
+                <tr><td>Ofertas de trabajo y postulaciones</td><td>Al usar la bolsa de trabajo</td><td>Gestionar publicación y postulación de empleos</td></tr>
+                <tr><td>Reportes y denuncias de contenido</td><td>Al reportar</td><td>Moderación de la plataforma</td></tr>
+            </tbody>
+        </table>
+
+        <h3>1.2 Datos capturados con su permiso</h3>
+        <table>
+            <thead><tr><th>Permiso</th><th>Cuándo se pide</th><th>Finalidad</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Ubicación</strong> (GPS)</td><td>Solo al usar &ldquo;almacenes cercanos&rdquo; u ofertas cercanas</td><td>Mostrar almacenes y ofertas por cercanía</td></tr>
+                <tr><td><strong>Cámara</strong></td><td>Solo al escanear una boleta o tomar una foto</td><td>Entrada de datos mediante OCR</td></tr>
+                <tr><td><strong>Micrófono</strong></td><td>Solo al dictar productos o pedir una lista</td><td>Entrada de datos por voz</td></tr>
+                <tr><td><strong>Notificaciones</strong></td><td>Al activar alertas</td><td>Enviar avisos de ofertas y demanda</td></tr>
+            </tbody>
+        </table>
+        <p>Puede revocar estos permisos en cualquier momento desde los ajustes de Android. Las funciones que dependen de ellos dejarán de estar disponibles.</p>
+
+        <h3>1.3 Datos recopilados automáticamente</h3>
         <ul>
-            <li><strong>Datos de cuenta:</strong> Nombre y correo electrónico autenticados vía Google Sign-In.</li>
-            <li><strong>Ubicación geográfica:</strong> Coordenadas GPS para la búsqueda de almacenes cercanos y recepción de alertas de oferta y demanda.</li>
-            <li><strong>Información comercial:</strong> Productos, precios y catálogos creados por comerciantes.</li>
+            <li><strong>Identificador de la cuenta:</strong> el UID (identificador anónimo) que genera Firebase Authentication al iniciar sesión.</li>
+            <li><strong>Información de dispositivo y diagnóstico:</strong> modelo, versión del sistema operativo y registros técnicos de fallo, usados para detectar errores y prevenir fraude.</li>
+            <li><strong>Token de integridad del dispositivo:</strong> la Aplicación usa la <em>Play Integrity API</em> de Google para verificar que se ejecuta en un dispositivo legítimo y no manipulado (seguridad anti-fraude). Este token no se usa para perfilarte con fines publicitarios.</li>
+            <li><strong>Compras y suscripciones:</strong> el estado de suscripción gestionado por Google Play Billing.</li>
         </ul>
 
-        <h2>2. Uso de la Información</h2>
-        <p>Los datos se procesan en la nube segura de Firebase exclusivamente para facilitar la intermediación local entre compradores y vendedores de barrio. No vendemos ni cedemos sus datos a terceros.</p>
+        <h3>1.4 Datos de terceros</h3>
+        <table>
+            <thead><tr><th>Proveedor</th><th>Datos que recibe</th><th>Finalidad</th></tr></thead>
+            <tbody>
+                <tr><td>Google (Firebase Authentication)</td><td>Nombre, correo, foto de perfil</td><td>Autenticación con cuenta de Google</td></tr>
+                <tr><td>Google (Play Billing)</td><td>Token de compra, tipo y estado de la suscripción</td><td>Gestión de pagos y renovaciones</td></tr>
+                <tr><td>Google (Google for Mobile Apps / UMP)</td><td>Respuesta de consentimiento de anuncios</td><td>Cumplimiento del Consent Management Platform</td></tr>
+                <tr><td>Google (Gemini, vía servidor propio)</td><td>Imágenes de boletas que usted elige escanear</td><td>Extracción de productos mediante OCR (el análisis lo ejecuta nuestro servidor; su clave nunca va en la app)</td></tr>
+            </tbody>
+        </table>
 
-        <h2>3. Contacto y Derechos ARCO</h2>
-        <p>Para ejercer sus derechos de acceso, rectificación, cancelación u oposición, escriba a nuestro equipo de soporte a: <strong>soporte.cfmcweb@gmail.com</strong>.</p>
+        <h2>2. Cómo usamos sus datos</h2>
+        <ul>
+            <li><strong>Autenticar</strong> su identidad con Google.</li>
+            <li><strong>Prestar el servicio:</strong> inventario, búsqueda de almacenes, alertas, bolsa de trabajo y comunicación entre compradores y vendedores.</li>
+            <li><strong>Gestionar pagos</strong> de suscripciones a través de Google Play Billing.</li>
+            <li><strong>Seguridad:</strong> detectar dispositivos comprometidos, prevenir fraude y proteger la plataforma.</li>
+            <li><strong>Notificaciones</strong> de ofertas, demanda y novedades relevantes.</li>
+            <li><strong>Mejorar el servicio</strong> mediante diagnóstico técnico agregado.</li>
+        </ul>
+        <p><strong>No vendemos ni cedemos sus datos personales a terceros</strong> con fines publicitarios ni de ningún otro tipo.</p>
+
+        <h2>3. Publicidad y anuncios</h2>
+        <p>La Aplicación muestra anuncios a través de <strong>Google AdMob</strong>. Cuando corresponde, se muestra un <em>banner de consentimiento</em> (UMP) para que usted acepte o rechace la personalización de anuncios, según su región.</p>
+        <ul>
+            <li>Si acepta, AdMob puede usar identificadores del dispositivo para personalizar anuncios.</li>
+            <li>Si rechaza, se muestran anuncios no personalizados.</li>
+            <li>Puede cambiar su elección desde los ajustes de anuncios de Google en cualquier momento.</li>
+        </ul>
+        <p>Para más información sobre cómo Google usa los datos en sus productos publicitarios, consulte: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a>.</p>
+
+        <h2>4. Cookies y tecnologías similares</h2>
+        <p>La Aplicación, al ser una app nativa, no utiliza cookies del navegador en sentido estricto. Utiliza almacenamiento local del dispositivo (incluyendo preferencias cifradas) para recordar su sesión, su consentimiento de privacidad, la aceptación de términos y sus preferencias.</p>
+
+        <h2>5. Base legal del tratamiento</h2>
+        <ul>
+            <li><strong>Consentimiento explícito:</strong> para ubicación, cámara, micrófono, notificaciones y personalización de anuncios.</li>
+            <li><strong>Ejecución de contrato:</strong> para los datos necesarios para prestar el servicio (cuenta, inventario, pagos).</li>
+            <li><strong>Interés legítimo:</strong> para seguridad y prevención de fraude.</li>
+        </ul>
+        <p>Esta política se rige por la Ley N° 19.628 (Protección de la Vida Privada) de Chile, modificada por la <strong>Ley N° 21.727 (2024)</strong> sobre Protección de Datos Personales, y por el GDPR cuando resulte aplicable.</p>
+
+        <h2>6. Dónde se almacenan y transfieren sus datos</h2>
+        <ul>
+            <li><strong>Firebase Authentication, Cloud Firestore y Firebase Storage</strong> (Google LLC, con infraestructura en Estados Unidos).</li>
+            <li><strong>Datos locales del dispositivo:</strong> las preferencias sensibles se guardan cifradas con <em>EncryptedSharedPreferences</em> (AES-256-GCM).</li>
+            <li>La transferencia internacional a Estados Unidos se ampara en las Cláusulas Contractuales Tipo de la UE y en las garantías contractuales de Google.</li>
+        </ul>
+
+        <h2>7. Seguridad</h2>
+        <ul>
+            <li>Cifrado en tránsito mediante TLS (gestionado por Firebase y por las conexiones HTTPS de los servicios de Google).</li>
+            <li>Preferencias locales cifradas con AES-256-GCM.</li>
+            <li>Reglas de seguridad de Firestore con control de acceso por roles.</li>
+            <li>Verificación de integridad del dispositivo con Play Integrity API y detección de depuración/root.</li>
+            <li>Compilación con R8 para reducir y ofuscar el código.</li>
+            <li>La API de OCR se ejecuta en nuestro servidor: su clave de acceso no viaja en la aplicación.</li>
+        </ul>
+        <p><em>Nota de transparencia:</em> ningún sistema es 100% infalible. Adoptamos medidas razonables de seguridad y continuaremos mejorándolas.</p>
+
+        <h2>8. Derechos sobre sus datos</h2>
+        <p>Usted puede ejercer sus derechos de <strong>Acceso, Rectificación, Cancelación (eliminación) y Oposición</strong>, así como la <strong>portabilidad</strong> y la <strong>retirada del consentimiento</strong>. Para hacerlo, escríbanos a: <a href="mailto:soporte.cfmcweb@gmail.com">soporte.cfmcweb@gmail.com</a>.</p>
+        <p>Incluya su nombre completo, una descripción clara del derecho que ejerce y su fecha. Responderemos en un plazo máximo de 15 días hábiles. Puede solicitar también la eliminación total de su cuenta y de sus datos asociados.</p>
+
+        <h2>9. Retención</h2>
+        <ul>
+            <li><strong>Cuenta de usuario:</strong> mientras su cuenta esté activa.</li>
+            <li><strong>Inventario y notas:</strong> hasta que usted los elimine o cierre su cuenta.</li>
+            <li><strong>Historial de compras/suscripciones:</strong> el plazo que exige la normativa tributaria y de consumo (generalmente 5 años).</li>
+            <li><strong>Ubicación:</strong> solo durante el uso de la función que la necesita; no la guardamos de forma permanente.</li>
+        </ul>
+
+        <h2>10. Menores de edad</h2>
+        <p>La Aplicación no está dirigida a menores de 14 años. Si usted es padre o tutor y detecta que un menor ha facilitado datos personales sin su consentimiento, escríbanos para eliminarlos.</p>
+
+        <h2>11. Cambios en esta política</h2>
+        <p>Podemos actualizar esta política. Los cambios se publicarán en esta misma página con la nueva fecha de &ldquo;Última actualización&rdquo;, y se comunicarán en la aplicación cuando los cambios sean relevantes.</p>
+
+        <h2>12. Contacto</h2>
+        <div class="contacto">
+            <p><strong>Responsable del tratamiento</strong><br>
+            RutaAlmacén<br>
+            Correo: <a href="mailto:soporte.cfmcweb@gmail.com">soporte.cfmcweb@gmail.com</a><br>
+            País: Chile</p>
+        </div>
     </div>
-    <footer><p>&copy; 2026 RutaAlmacén - Todos los derechos reservados.</p></footer>
+    <footer>
+        <p>&copy; 2026 RutaAlmacén. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
